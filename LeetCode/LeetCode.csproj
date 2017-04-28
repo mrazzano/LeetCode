@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E39418AB-8CE5-4AE4-ACA8-5D9DA86F01E9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeetCode</RootNamespace>
+    <AssemblyName>LeetCode</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithms\AlgorithmModule.cs" />
+    <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockII.cs" />
+    <Compile Include="Algorithms\Easy\PascalsTriangle.cs" />
+    <Compile Include="Algorithms\Easy\ClimbingStairs.cs" />
+    <Compile Include="Algorithms\Easy\ImplementSqrt.cs" />
+    <Compile Include="Algorithms\Easy\MergeSortedArrays.cs" />
+    <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockI.cs" />
+    <Compile Include="Algorithms\Easy\SingleNumber.cs" />
+    <Compile Include="Algorithms\Easy\PlusOne.cs" />
+    <Compile Include="Algorithms\Easy\CountAndSay.cs" />
+    <Compile Include="Algorithms\Easy\ImplementStrStr.cs" />
+    <Compile Include="Algorithms\Easy\RemoveDuplicatesSortedArray.cs" />
+    <Compile Include="Algorithms\Easy\MergeSortedLists.cs" />
+    <Compile Include="Algorithms\Easy\ValidPalindrome.cs" />
+    <Compile Include="Algorithms\Easy\ValidParentheses.cs" />
+    <Compile Include="Algorithms\Easy\LongestCommonPrefix.cs" />
+    <Compile Include="Algorithms\Easy\RomanToInteger.cs" />
+    <Compile Include="Algorithms\Easy\ReverseInteger.cs" />
+    <Compile Include="Algorithms\Easy\TwoSum.cs" />
+    <Compile Include="Library\IModule.cs" />
+    <Compile Include="Library\IQuestion.cs" />
+    <Compile Include="Library\ListNode.cs" />
+    <Compile Include="Library\Utility.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
