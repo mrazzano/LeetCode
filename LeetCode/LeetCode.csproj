@@ -44,11 +44,14 @@
   <ItemGroup>
     <Compile Include="Algorithms\AlgorithmModule.cs" />
     <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockII.cs" />
+    <Compile Include="Algorithms\Easy\LinkedListCycle.cs" />
     <Compile Include="Algorithms\Easy\PascalsTriangle.cs" />
     <Compile Include="Algorithms\Easy\ClimbingStairs.cs" />
     <Compile Include="Algorithms\Easy\ImplementSqrt.cs" />
     <Compile Include="Algorithms\Easy\MergeSortedArrays.cs" />
     <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockI.cs" />
+    <Compile Include="Algorithms\Easy\MinimumStack.cs" />
+    <Compile Include="Algorithms\Easy\RotateArray.cs" />
     <Compile Include="Algorithms\Easy\SingleNumber.cs" />
     <Compile Include="Algorithms\Easy\PlusOne.cs" />
     <Compile Include="Algorithms\Easy\CountAndSay.cs" />
@@ -64,6 +67,7 @@
     <Compile Include="Library\IModule.cs" />
     <Compile Include="Library\IQuestion.cs" />
     <Compile Include="Library\ListNode.cs" />
+    <Compile Include="Library\TreeNode.cs" />
     <Compile Include="Library\Utility.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

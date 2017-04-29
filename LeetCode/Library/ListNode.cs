@@ -2,12 +2,12 @@
 {
     public class ListNode
     {
-        public int data;
+        public int val;
         public ListNode next;
 
-        public ListNode(int data, ListNode next) 
+        public ListNode(int x, ListNode next) 
         {
-            this.data = data;
+            this.val = x;
             this.next = next;
         }
     }

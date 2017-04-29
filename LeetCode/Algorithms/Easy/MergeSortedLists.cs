@@ -14,8 +14,7 @@ namespace LeetCode.Algorithms.Easy
             var l1 = Utility.GetLinkedList(new[] { 1, 3, 5 });
             var l2 = Utility.GetLinkedList(new[] { 2, 4, 6 });
 
-            var result = solution(l1, l2);
-            Utility.PrintLinkedList(result);
+            Utility.PrintLinkedList(solution(l1, l2));
         }
 
         private static ListNode solution(ListNode l1, ListNode l2)
@@ -33,7 +32,7 @@ namespace LeetCode.Algorithms.Easy
             var prev = result;
             while (l1 != null && l2 != null)
             {
-                if (l1.data < l2.data)
+                if (l1.val < l2.val)
                 {
                     prev.next = l1;
                     l1 = l1.next;

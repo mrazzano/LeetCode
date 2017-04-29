@@ -35,7 +35,11 @@ namespace LeetCode.Algorithms
                new BestTimeToBuyAndSellStockI(),
                new BestTimeToBuyAndSellStockII(),
                new ValidPalindrome(),
-               new SingleNumber()
+               new SingleNumber(),
+               new LinkedListCycle(),
+               new MinimumStack(),
+
+               new RotateArray()
             });
         }
     }

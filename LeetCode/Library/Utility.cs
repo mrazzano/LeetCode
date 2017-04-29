@@ -64,7 +64,7 @@ namespace LeetCode.Library
             var node = head;
             while (node != null)
             {
-                sb.AppendFormat("{0}->", node.data);
+                sb.AppendFormat("{0}->", node.val);
                 node = node.next;
             }
             Console.WriteLine(sb.ToString().Remove(sb.Length - 2, 2));
