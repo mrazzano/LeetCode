@@ -31,6 +31,8 @@ namespace LeetCode.Algorithms
                new ImplementSqrt(),
                new ClimbingStairs(),
                new MergeSortedArrays(),
+               new SymmetricTree(),
+               new SortedArrayToBST(),
                new PascalsTriangle(),
                new BestTimeToBuyAndSellStockI(),
                new BestTimeToBuyAndSellStockII(),
@@ -39,7 +41,8 @@ namespace LeetCode.Algorithms
                new LinkedListCycle(),
                new MinimumStack(),
 
-               new RotateArray()
+               new RotateArray(),
+               new ReverseBits(),
             });
         }
     }

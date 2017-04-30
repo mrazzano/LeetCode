@@ -9,7 +9,7 @@ namespace LeetCode.Algorithms.Easy
 
         public void Run(int order)
         {
-            Console.WriteLine("Question {0} - {1}", order, question);
+            Utility.PrintQuestionHeader(order, question);
 
             const string needle = "cde";
             const string haystack = "abcdefg";

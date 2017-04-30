@@ -8,7 +8,7 @@ namespace LeetCode.Library
     {
         private const int LineLength = 60;
 
-        public static string GetProgramHeader(string header)
+        public static void PrintProgramHeader(string header)
         {
             var separator = new string('*', LineLength);
 
@@ -18,11 +18,10 @@ namespace LeetCode.Library
             sb.Append(Environment.NewLine);
             sb.AppendLine(separator);
             sb.AppendLine();
-
-            return sb.ToString();
+            Console.WriteLine(sb.ToString());
         }
 
-        public static string GetLessonHeader(string header)
+        public static void PrintLessonHeader(string header)
         {
             var separator = new string('-', LineLength);
 
@@ -30,8 +29,37 @@ namespace LeetCode.Library
             sb.AppendLine(separator);
             sb.AppendLine(header);
             sb.Append(separator);
+            Console.WriteLine(sb.ToString());
+        }
 
-            return sb.ToString();
+        public static void PrintQuestionHeader(int order, string question)
+        {
+            Console.WriteLine("Question {0} - {1}", order, question);
+        }
+
+        public static ListNode GetLinkedList(int[] nodes)
+        {
+            ListNode lastListNode = null;
+            for (var i = nodes.Length - 1; i >= 0; i--)
+            {
+                var node = new ListNode(nodes[i], lastListNode);
+                lastListNode = node;
+            }
+            return lastListNode;
+        }
+
+        public static TreeNode GetBinaryTree(int[] treeNodes, int index)
+        {
+            if (index > treeNodes.Length)
+                return null;
+
+            var value = treeNodes[index - 1];
+            var node = new TreeNode(value)
+            {
+                left = GetBinaryTree(treeNodes, index * 2),
+                right = GetBinaryTree(treeNodes, index * 2 + 1)
+            };
+            return node;
         }
 
         public static void PrintArray(int[] array)
@@ -47,17 +75,6 @@ namespace LeetCode.Library
             Console.WriteLine(sb.ToString());
         }
 
-        public static ListNode GetLinkedList(int[] nodes)
-        {
-            ListNode lastListNode = null;
-            for (var i = nodes.Length - 1; i >= 0; i--)
-            {
-                var node = new ListNode(nodes[i], lastListNode);
-                lastListNode = node;
-            }
-            return lastListNode;
-        }
-
         public static void PrintLinkedList(ListNode head)
         {
             var sb = new StringBuilder();
@@ -70,9 +87,19 @@ namespace LeetCode.Library
             Console.WriteLine(sb.ToString().Remove(sb.Length - 2, 2));
         }
 
+        public static void PrintTreePreOrder(TreeNode root)
+        {
+            if (root == null)
+                return;
+
+            Console.Write(root.val + " ");
+            PrintTreePreOrder(root.left);
+            PrintTreePreOrder(root.right);
+        }
+
         public static void RunQuestions(string header, IReadOnlyList<IQuestion> questions)
         {
-            Console.WriteLine(GetLessonHeader(header));
+            PrintLessonHeader(header);
             for (var i = 0; i < questions.Count; i++)
             {
                 questions[i].Run(i + 1);

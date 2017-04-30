@@ -1,5 +1,4 @@
-﻿using System;
-using LeetCode.Library;
+﻿using LeetCode.Library;
 
 namespace LeetCode.Algorithms.Easy
 {
@@ -9,7 +8,7 @@ namespace LeetCode.Algorithms.Easy
 
         public void Run(int order)
         {
-            Console.WriteLine("Question {0} - {1}", order, question);
+            Utility.PrintQuestionHeader(order, question);
 
             var l1 = Utility.GetLinkedList(new[] { 1, 3, 5 });
             var l2 = Utility.GetLinkedList(new[] { 2, 4, 6 });
