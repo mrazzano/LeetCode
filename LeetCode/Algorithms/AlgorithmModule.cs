@@ -38,6 +38,13 @@ namespace LeetCode.Algorithms
                new MinimumStack(),
                new RotateArray(),
                new ReverseBits(),
+               new MajorityElement(),
+               new ExcelColumnNumber(),
+               new NumberOfOneBits(),
+               new HouseRobber(),
+               new HappyNumber(),
+               new CountPrimes(),
+              
             });
         }
     }

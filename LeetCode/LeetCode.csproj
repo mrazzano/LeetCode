@@ -44,8 +44,14 @@
   <ItemGroup>
     <Compile Include="Algorithms\AlgorithmModule.cs" />
     <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockII.cs" />
+    <Compile Include="Algorithms\Easy\HappyNumber.cs" />
+    <Compile Include="Algorithms\Easy\CountPrimes.cs" />
+    <Compile Include="Algorithms\Easy\NumberOfOneBits.cs" />
     <Compile Include="Algorithms\Easy\LinkedListCycle.cs" />
+    <Compile Include="Algorithms\Easy\ExcelColumnNumber.cs" />
+    <Compile Include="Algorithms\Easy\MajorityElement.cs" />
     <Compile Include="Algorithms\Easy\MaximumDepthBinaryTree.cs" />
+    <Compile Include="Algorithms\Easy\HouseRobber.cs" />
     <Compile Include="Algorithms\Easy\SymmetricTree.cs" />
     <Compile Include="Algorithms\Easy\SortedArrayToBST.cs" />
     <Compile Include="Algorithms\Easy\PascalsTriangle.cs" />
