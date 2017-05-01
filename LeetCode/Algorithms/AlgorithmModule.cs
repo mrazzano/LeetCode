@@ -11,11 +11,6 @@ namespace LeetCode.Algorithms
         public void Execute()
         {
             // execute all modules
-            RunEasyQuestions();
-        }
-
-        private static void RunEasyQuestions()
-        {
             Utility.RunQuestions(string.Format(ModuleHeader, "Easy"), new List<IQuestion>()
             {
                new TwoSum(),
@@ -33,6 +28,7 @@ namespace LeetCode.Algorithms
                new MergeSortedArrays(),
                new SymmetricTree(),
                new SortedArrayToBST(),
+               new MaximumDepthBinaryTree(),
                new PascalsTriangle(),
                new BestTimeToBuyAndSellStockI(),
                new BestTimeToBuyAndSellStockII(),
@@ -40,7 +36,6 @@ namespace LeetCode.Algorithms
                new SingleNumber(),
                new LinkedListCycle(),
                new MinimumStack(),
-
                new RotateArray(),
                new ReverseBits(),
             });

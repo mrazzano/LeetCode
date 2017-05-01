@@ -8,6 +8,8 @@ namespace LeetCode.Library
     {
         private const int LineLength = 60;
 
+        #region Output Methods
+
         public static void PrintProgramHeader(string header)
         {
             var separator = new string('*', LineLength);
@@ -18,6 +20,7 @@ namespace LeetCode.Library
             sb.Append(Environment.NewLine);
             sb.AppendLine(separator);
             sb.AppendLine();
+
             Console.WriteLine(sb.ToString());
         }
 
@@ -29,37 +32,14 @@ namespace LeetCode.Library
             sb.AppendLine(separator);
             sb.AppendLine(header);
             sb.Append(separator);
+
             Console.WriteLine(sb.ToString());
         }
 
         public static void PrintQuestionHeader(int order, string question)
         {
-            Console.WriteLine("Question {0} - {1}", order, question);
-        }
-
-        public static ListNode GetLinkedList(int[] nodes)
-        {
-            ListNode lastListNode = null;
-            for (var i = nodes.Length - 1; i >= 0; i--)
-            {
-                var node = new ListNode(nodes[i], lastListNode);
-                lastListNode = node;
-            }
-            return lastListNode;
-        }
-
-        public static TreeNode GetBinaryTree(int[] treeNodes, int index)
-        {
-            if (index > treeNodes.Length)
-                return null;
-
-            var value = treeNodes[index - 1];
-            var node = new TreeNode(value)
-            {
-                left = GetBinaryTree(treeNodes, index * 2),
-                right = GetBinaryTree(treeNodes, index * 2 + 1)
-            };
-            return node;
+            const string FormatString = "Question {0} - {1}";
+            Console.WriteLine(FormatString, order, question);
         }
 
         public static void PrintArray(int[] array)
@@ -96,6 +76,37 @@ namespace LeetCode.Library
             PrintTreePreOrder(root.left);
             PrintTreePreOrder(root.right);
         }
+        #endregion
+
+        #region Initialization Methods
+
+        public static ListNode GetLinkedList(int[] nodes)
+        {
+            ListNode lastListNode = null;
+            for (var i = nodes.Length - 1; i >= 0; i--)
+            {
+                var node = new ListNode(nodes[i], lastListNode);
+                lastListNode = node;
+            }
+            return lastListNode;
+        }
+
+        public static TreeNode GetBinaryTree(int[] treeNodes, int index)
+        {
+            if (index > treeNodes.Length)
+                return null;
+
+            var value = treeNodes[index - 1];
+            var node = new TreeNode(value)
+            {
+                left = GetBinaryTree(treeNodes, index * 2),
+                right = GetBinaryTree(treeNodes, index * 2 + 1)
+            };
+            return node;
+        }
+        #endregion
+
+        #region Implementation Methods
 
         public static void RunQuestions(string header, IReadOnlyList<IQuestion> questions)
         {
@@ -106,5 +117,6 @@ namespace LeetCode.Library
                 Console.WriteLine();
             }
         }
+        #endregion
     }
 }
