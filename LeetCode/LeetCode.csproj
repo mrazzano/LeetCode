@@ -46,6 +46,16 @@
     <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockII.cs" />
     <Compile Include="Algorithms\Easy\HappyNumber.cs" />
     <Compile Include="Algorithms\Easy\CountPrimes.cs" />
+    <Compile Include="Algorithms\Easy\ContainsDuplicates.cs" />
+    <Compile Include="Algorithms\Easy\DeleteLinkedListNode.cs" />
+    <Compile Include="Algorithms\Easy\IsPowerOfThree.cs" />
+    <Compile Include="Algorithms\Easy\MovingZeros.cs" />
+    <Compile Include="Algorithms\Easy\MissingNumber.cs" />
+    <Compile Include="Algorithms\Easy\IntersectionOfTwoArrays.cs" />
+    <Compile Include="Algorithms\Easy\ReverseString.cs" />
+    <Compile Include="Algorithms\Easy\ValidAnagram.cs" />
+    <Compile Include="Algorithms\Easy\PalindromeLinkedList.cs" />
+    <Compile Include="Algorithms\Easy\ReverseLinkedList.cs" />
     <Compile Include="Algorithms\Easy\NumberOfOneBits.cs" />
     <Compile Include="Algorithms\Easy\LinkedListCycle.cs" />
     <Compile Include="Algorithms\Easy\ExcelColumnNumber.cs" />

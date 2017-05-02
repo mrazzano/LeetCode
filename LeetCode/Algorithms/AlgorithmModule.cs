@@ -44,7 +44,16 @@ namespace LeetCode.Algorithms
                new HouseRobber(),
                new HappyNumber(),
                new CountPrimes(),
-              
+               new ReverseLinkedList(),
+               new ContainsDuplicates(),
+               new DeleteLinkedListNode(),
+               new PalindromeLinkedList(),
+               new ValidAnagram(),
+               new MissingNumber(),
+               new MovingZeros(),
+               new IsPowerOfThree(),
+               new ReverseString(),
+               new IntersectionOfTwoArrays()
             });
         }
     }
