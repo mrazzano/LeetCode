@@ -42,7 +42,7 @@ namespace LeetCode.Library
             Console.WriteLine(FormatString, order, question);
         }
 
-        public static void PrintArray(int[] array)
+        public static void PrintArray<T>(T[] array)
         {
             var sb = new StringBuilder();
             sb.Append("[");

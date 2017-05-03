@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Algorithms\AlgorithmModule.cs" />
     <Compile Include="Algorithms\Easy\BestTimeToBuyAndSellStockII.cs" />
+    <Compile Include="Algorithms\Easy\FizzBuzz.cs" />
+    <Compile Include="Algorithms\Easy\FirstUniqueCharacter.cs" />
+    <Compile Include="Algorithms\Easy\SumOfTwoIntegers.cs" />
     <Compile Include="Algorithms\Easy\HappyNumber.cs" />
     <Compile Include="Algorithms\Easy\CountPrimes.cs" />
     <Compile Include="Algorithms\Easy\ContainsDuplicates.cs" />

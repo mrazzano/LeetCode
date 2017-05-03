@@ -53,7 +53,10 @@ namespace LeetCode.Algorithms
                new MovingZeros(),
                new IsPowerOfThree(),
                new ReverseString(),
-               new IntersectionOfTwoArrays()
+               new IntersectionOfTwoArrays(),
+               new SumOfTwoIntegers(),
+               new FirstUniqueCharacter(),
+               new FizBuzz()
             });
         }
     }

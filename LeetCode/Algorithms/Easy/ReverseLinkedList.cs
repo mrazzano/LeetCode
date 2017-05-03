@@ -1,5 +1,4 @@
-﻿using System;
-using LeetCode.Library;
+﻿using LeetCode.Library;
 
 namespace LeetCode.Algorithms.Easy
 {
@@ -12,7 +11,7 @@ namespace LeetCode.Algorithms.Easy
             Utility.PrintQuestionHeader(order, question);
 
             var head = Utility.GetLinkedList(new[] {1, 2, 3, 4, 5});
-            Console.WriteLine(solution(head));
+            Utility.PrintLinkedList(solution(head));
         }
 
         private static ListNode solution(ListNode head)
