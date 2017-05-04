@@ -87,6 +87,8 @@
     <Compile Include="Algorithms\Easy\RomanToInteger.cs" />
     <Compile Include="Algorithms\Easy\ReverseInteger.cs" />
     <Compile Include="Algorithms\Easy\TwoSum.cs" />
+    <Compile Include="Algorithms\Medium\LongestSubstringWithoutRepeats.cs" />
+    <Compile Include="Algorithms\Medium\AddTwoNumbers.cs" />
     <Compile Include="Library\IModule.cs" />
     <Compile Include="Library\IQuestion.cs" />
     <Compile Include="Library\ListNode.cs" />
