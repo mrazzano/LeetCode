@@ -72,7 +72,10 @@ namespace LeetCode.Algorithms
             Utility.RunQuestions(string.Format(ModuleHeader, "Medium"), new List<IQuestion>()
             {
                 new AddTwoNumbers(),
-                new LongestSubstringWithoutRepeats()
+                new LongestSubstringWithoutRepeats(),
+                new LongestPalindromicSubstring(),
+                new SearchRotatedArray(),
+                new ProductOfArrayExceptSelf()
             });
         }
     }

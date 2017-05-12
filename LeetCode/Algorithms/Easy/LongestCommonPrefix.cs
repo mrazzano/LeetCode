@@ -15,24 +15,18 @@ namespace LeetCode.Algorithms.Easy
             Console.WriteLine(solution(input));
         }
 
-        private static string solution(string[] input)
+        private static string solution(string[] strs)
         {
-            var result = "";
-            if (input.Length == 0)
-                return result;
+            if (strs.Length == 0)
+                return "";
 
-            var firstString = input[0];
-            if (input.Length == 1)
-                return firstString;
-
-            for (var i = 0; i < firstString.Length; i++)
+            var result = strs[0];
+            for (var i = 1; i < strs.Length; i++)
             {
-                for (var j = 1; j < input.Length; j++)
+                while (strs[i].IndexOf(result, StringComparison.Ordinal) != 0)
                 {
-                    if (firstString[i] != input[j][i])
-                        return result;
+                    result = result.Substring(0, result.Length - 1);
                 }
-                result += firstString[i];
             }
             return result;
         }

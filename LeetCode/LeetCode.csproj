@@ -87,6 +87,11 @@
     <Compile Include="Algorithms\Easy\RomanToInteger.cs" />
     <Compile Include="Algorithms\Easy\ReverseInteger.cs" />
     <Compile Include="Algorithms\Easy\TwoSum.cs" />
+    <Compile Include="Algorithms\Medium\ProductOfArrayExcept self.cs" />
+    <Compile Include="Algorithms\Medium\SearchRotatedArray.cs" />
+    <Compile Include="Algorithms\Medium\LongestPalindromicSubstring.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Algorithms\Medium\LongestSubstringWithoutRepeats.cs" />
     <Compile Include="Algorithms\Medium\AddTwoNumbers.cs" />
     <Compile Include="Library\IModule.cs" />
