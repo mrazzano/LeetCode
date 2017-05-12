@@ -9,7 +9,7 @@ namespace LeetCode.Algorithms.Medium
         public void Run(int order)
         {
             Utility.PrintQuestionHeader(order, question);
-          
+
             var nums = new[] { 1, 2, 3, 4 };
             Utility.PrintArray(solution(nums));
         }
@@ -22,7 +22,7 @@ namespace LeetCode.Algorithms.Medium
             result[0] = 1;
             for (var i = 1; i < length; i++)
             {
-                result[i] = result[i - 1]*nums[i - 1];
+                result[i] = result[i - 1] * nums[i - 1];
             }
             return result;
         }

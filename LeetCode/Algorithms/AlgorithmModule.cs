@@ -75,7 +75,9 @@ namespace LeetCode.Algorithms
                 new LongestSubstringWithoutRepeats(),
                 new LongestPalindromicSubstring(),
                 new SearchRotatedArray(),
-                new ProductOfArrayExceptSelf()
+                new ProductOfArrayExceptSelf(),
+                new ZigZagConversion(),
+                new IntegerToRoman()
             });
         }
     }

@@ -45,7 +45,7 @@ namespace LeetCode.Algorithms.Medium
                 start--;
                 end++;
             }
-            return s.Substring(start + 1, end - (start+1));
+            return s.Substring(start + 1, end - (start + 1));
         }
     }
 }

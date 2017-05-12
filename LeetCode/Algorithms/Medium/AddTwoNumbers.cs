@@ -10,7 +10,7 @@ namespace LeetCode.Algorithms.Medium
         {
             Utility.PrintQuestionHeader(order, question);
 
-            var l1 = Utility.GetLinkedList(new[] {2, 4, 3});
+            var l1 = Utility.GetLinkedList(new[] { 2, 4, 3 });
             var l2 = Utility.GetLinkedList(new[] { 5, 6, 4 });
             Utility.PrintLinkedList(solution(l1, l2));
         }

@@ -88,6 +88,8 @@
     <Compile Include="Algorithms\Easy\ReverseInteger.cs" />
     <Compile Include="Algorithms\Easy\TwoSum.cs" />
     <Compile Include="Algorithms\Medium\ProductOfArrayExcept self.cs" />
+    <Compile Include="Algorithms\Medium\IntegerToRoman.cs" />
+    <Compile Include="Algorithms\Medium\ZigZagConversion.cs" />
     <Compile Include="Algorithms\Medium\SearchRotatedArray.cs" />
     <Compile Include="Algorithms\Medium\LongestPalindromicSubstring.cs">
       <SubType>Code</SubType>
